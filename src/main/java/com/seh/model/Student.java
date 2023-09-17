@@ -7,6 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+
 @Entity
 @Table(name="student")
 public class Student {
@@ -18,6 +19,7 @@ public class Student {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY) 
     private Long student_id;
+    
 	@Column(name="student_name")
 	private String student_name;
 	@Column(name="student_password")
@@ -57,7 +59,6 @@ public class Student {
 	}
 	public Student( Long student_id,String student_name, String student_password, String student_mobile,
 			String student_email) {
-		super();
 		this.student_id = student_id;
 		this.student_name = student_name;
 		this.student_password = student_password;
