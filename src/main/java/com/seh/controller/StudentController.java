@@ -1,3 +1,4 @@
+//Presentation Layer - controllers to accept the requests from the client
 package com.seh.controller;
 
 import java.util.ArrayList;
@@ -30,7 +31,11 @@ public class StudentController {
         return student;
     }
 	
+	//Get all the student details
 	@GetMapping("/students")
+	/*public String home() {
+		return "welcome!!";
+	}*/
 	public ResponseEntity<List<Student>> getAllEmployees() {
 		List<Student> studentList = new ArrayList<>();
 		studentRepo.findAll().forEach(studentList::add);

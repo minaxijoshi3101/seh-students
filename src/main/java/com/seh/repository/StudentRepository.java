@@ -1,3 +1,4 @@
+//DAO/Repository layer - connects to database tp get the data
 package com.seh.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
