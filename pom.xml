@@ -61,7 +61,7 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<sonar.host.url>http://192.168.18.10:9000/</sonar.host.url>
+				<sonar.host.url>http://192.168.18.5:9000/</sonar.host.url>
 				<sonar.login>5872012f7634e30924a90c5c974e4388ffe71072</sonar.login>
 			</properties>
 		</profile>
