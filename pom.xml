@@ -96,5 +96,14 @@
 		</plugins>
 		<finalName>seh-students</finalName>
 	</build>
-
+	<distributionManagement>
+		<repository>
+			<id>nexus-repo</id>
+			<url>http://192.168.18.11:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>http://192.168.18.11:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
