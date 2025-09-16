@@ -20,6 +20,7 @@ cd seh-students
 
 ## 🗂 Folder Structure
 
+```
 seh-students/
 ├── src/
 │   ├── main/
@@ -30,7 +31,7 @@ seh-students/
 ├── target/                                 # Compiled JAR files
 ├── Dockerfile                              # Docker build file
 └── pom.xml                                 # Maven configuration
-
+```
 ## 🛠 Build the Application
 
 Build the project using **Maven**:
