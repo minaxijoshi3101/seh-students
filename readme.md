@@ -62,28 +62,29 @@ EXPOSE 3000
 ENTRYPOINT ["java","-jar","app.jar"]
 ```
 
-Build Docker Image
+### 🛠 Build Docker Image
 ```bash
 docker build -t seh-students:latest .
 ```
-Push Docker Image
+### Push Docker Image
 ```bash
 docker tag seh-students:latest <your-dockerhub-username>/seh-students:latest
 docker push <your-dockerhub-username>/seh-students:latest
 ```
-Pull and Run Docker Image
+### Pull and Run Docker Image
 ```bash
 docker pull <your-dockerhub-username>/seh-students:latest
 docker run -p 3000:3000 seh-students:latest
 ```
-API Usage
+## API Usage
 
 Use Postman or any API client to interact with the APIs.
 
-Get all students:
+## Get all students:
 
+```
 GET http://<host-ip>:3000/api/v1/student
-
+```
 
 Example Postman Request JSON Collection:
 ```bash
@@ -113,4 +114,4 @@ Example Postman Request JSON Collection:
   ]
 }
 ```
-Notes: Ensure Docker is installed on your machine before building or running images.
+### Notes: Ensure Docker is installed on your machine before building or running images.
