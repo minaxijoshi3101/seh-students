@@ -6,8 +6,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.2</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<version>3.2.0</version>
+		<relativePath/>
 	</parent>
 	<groupId>com.seh</groupId>
 	<artifactId>seh-students</artifactId>
@@ -94,7 +94,7 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<finalName>seh-students</finalName>
+		<finalName>${project.artifactId}-${project.version}</finalName>
 	</build>
 	<distributionManagement>
 		<repository>

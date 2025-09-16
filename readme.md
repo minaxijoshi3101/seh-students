@@ -115,3 +115,9 @@ Example Postman Request JSON Collection:
 }
 ```
 ### Notes: Ensure Docker is installed on your machine before building or running images.
+
+### Dont forget to export 
+```
+export DB_USERNAME=************
+export DB_PASSWORD=************
+```
