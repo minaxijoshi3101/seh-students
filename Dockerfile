@@ -13,5 +13,5 @@ COPY src/main/resources/internal-truststore.jks .
 # Expose HTTPS port
 EXPOSE 8443
 
-# Run the Spring Boot app with SSL system properties
-CMD ["java", "-Djavax.net.ssl.trustStore=internal-truststore.jks", "-Djavax.net.ssl.trustStorePassword=changeit", "-jar", "seh-students-0.0.1-SNAPSHOT.jar"]
+# Run the Spring Boot app
+CMD ["java", "-jar", "seh-students-0.0.1-SNAPSHOT.jar"]

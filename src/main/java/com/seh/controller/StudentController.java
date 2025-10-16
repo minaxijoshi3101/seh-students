@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.seh.model.Student;
 import com.seh.repository.StudentRepository;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:8443")
 @RestController
 @RequestMapping("/api/v1/student")
 //@RequestMapping("/api")
