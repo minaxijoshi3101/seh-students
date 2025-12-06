@@ -14,7 +14,7 @@ public class CorpsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins(allowedOrigins) // Read the allowed origins from properties
+                .allowedOrigins(allowedOrigins.split(",")) // Read the allowed origins from properties
                 .allowCredentials(true)
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS"); // Added OPTIONS method
     }

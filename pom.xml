@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.seh</groupId>
 	<artifactId>seh-students</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-RELEASE</version>
 	<name>seh-students</name>
 	<description>SEH Students CRUD API using Spring Boot</description>
 	<properties>
@@ -96,7 +96,7 @@
 		</plugins>
 		<finalName>${project.artifactId}-${project.version}</finalName>
 	</build>
-	<distributionManagement>
+	<!-- <distributionManagement>
 		<repository>
 			<id>nexus-repo</id>
 			<url>http://192.168.18.11:8081/repository/maven-releases/</url>
@@ -105,5 +105,17 @@
 			<id>nexus-snapshots</id>
 			<url>http://192.168.18.11:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
-	</distributionManagement>
+	</distributionManagement> -->
+	<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>mt-frontend-ep-seh-students-snapshots-snapshots</name>
+        <url>https://trialmse12e.jfrog.io/artifactory/seh-students-snapshots</url>
+    </snapshotRepository>
+    <repository>
+        <id>central</id>
+        <name>mt-frontend-ep-seh-students-releases-releases</name>
+        <url>https://trialmse12e.jfrog.io/artifactory/seh-students-releases</url>
+    </repository>
+</distributionManagement>
 </project>
