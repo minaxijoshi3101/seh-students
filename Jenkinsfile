@@ -6,7 +6,7 @@ pipeline{
     stages {
         stage("build"){
             steps{
-                echo "build job triggered"
+                echo "build job triggered test"
             }
         }
     }
