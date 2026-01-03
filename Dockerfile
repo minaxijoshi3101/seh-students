@@ -1,4 +1,13 @@
-FROM openjdk:20-ea-13
-COPY target/*.jar .
-CMD ["Java","-jar","*.jar"]
-EXPOSE 5001
+FROM openjdk:26-ea-slim
+# Set working directory
+WORKDIR /app
+
+# Copy JAR file
+COPY target/seh-students-0.0.1-SNAPSHOT.jar .
+COPY src/main/resources/seh-students.p12 .
+COPY src/main/resources/internal-truststore.jks .
+# Expose HTTPS port
+EXPOSE 8443
+
+# Run the Spring Boot app
+CMD ["java", "-jar", "seh-students-0.0.1-SNAPSHOT.jar"]
