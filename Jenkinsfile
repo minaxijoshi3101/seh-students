@@ -2,11 +2,11 @@
 genericMerged([PropertyFileName: "SEH_seh-students_source",
     PropertyFolderName: "SEH"])*/
 
-/* @Library(['devops_automation@development-Hybrid'])_
-build_and_upload_artifacts_pipeline_template() */
+@Library(['devops_automation@devops'])_
+build_and_upload_artifacts_pipeline_template()
 
-/* @Library(['<shared-library-name>@<branch-name>'])_
-<buildandupload-groovyfilename>() */
+@Library(['<shared-library-name>@<branch-name>'])_
+<buildandupload-groovyfilename>()
 
 pipeline{
     agent any
