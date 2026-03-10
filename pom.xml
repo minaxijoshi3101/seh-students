@@ -55,7 +55,7 @@
 	</dependencies>
 
 	<profiles>
-		<profile>
+<!-- 		<profile>
 			<id>sonar</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
@@ -64,7 +64,7 @@
 				<sonar.host.url>http://192.168.18.5:9000/</sonar.host.url>
 				<sonar.login>5872012f7634e30924a90c5c974e4388ffe71072</sonar.login>
 			</properties>
-		</profile>
+		</profile> -->
 	</profiles>
 
 	<build>
@@ -106,7 +106,7 @@
 			<url>http://192.168.18.11:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement> -->
-	<distributionManagement>
+	<!-- <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
         <name>mt-frontend-ep-seh-students-snapshots-snapshots</name>
@@ -117,5 +117,5 @@
         <name>mt-frontend-ep-seh-students-releases-releases</name>
         <url>https://trialmse12e.jfrog.io/artifactory/seh-students-releases</url>
     </repository>
-</distributionManagement>
+</distributionManagement> -->
 </project>
