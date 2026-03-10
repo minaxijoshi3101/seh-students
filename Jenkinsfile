@@ -1,2 +1,5 @@
 @Library('devops_pipeline')_ 
-build()
+build(
+    SONAR_PROJECT_KEY = "seh-students",
+    SONAR_PROJECT_NAME = "SEH Students"
+)
