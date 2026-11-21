@@ -10,4 +10,4 @@ build_and_upload_artifacts_pipeline_template() */
 
 @Library(['devops_automation@development-Hybrid'])_
 genericMerged([PropertyFileName: "SEH_seh-students_source",
-    PropertyFolderName: "SEH"]) */
+    PropertyFolderName: "SEH"])
